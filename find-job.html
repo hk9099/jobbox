@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find-job</title>
+  <link rel="icon" href="images/jobhub-logo2.png" type="image/icon">
+  <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/min-media.css" />
+</head>
+
+
+
+<body>
+ <!-- offcanvas start -->
+ <div class="offcanvas offcanvas-start" id="abc">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title"><a href="index.html"><img src="images/jobhub-logo.svg" class="navbar-brand"
+          alt=""></a></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav>
+      <ul class="m-0 p-0 flex-column d-flex">
+        <li class="main-menu-list position-relative float-start">
+          <a class="active" href="index.html">Home
+            <i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Home 1</a></li>
+            <li><a href="#">Home 2</a></li>
+            <li><a href="#">Home 3</a></li>
+            <li><a href="#">Home 4</a></li>
+            <li><a href="#">Home 5</a></li>
+            <li><a href="#">Home 6</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="find-job.html">Find a Job<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Jobs Grid</a></li>
+            <li><a href="#">Jobs List</a></li>
+            <li><a href="#">Jobs Details</a></li>
+            <li><a href="#">Jobs Details 2</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="recruiters.html">Recruiters<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Recruiters</a></li>
+            <li><a href="#">Company Details</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="candidates.html">Candidates<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Candidates Grid</a></li>
+            <li><a href="#">Candidate Details</a></li>
+            <li><a href="#">Candidate Profile</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="blog.html">Blog<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Blog Grid</a></li>
+            <li><a href="#">Blog Grid 2</a></li>
+            <li><a href="#">Blog Single</a></li>
+          </ul>
+        </li>
+        <li class="dashboard float-start position-relative">
+          <a href="#">Dashboard</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- offcanvas end -->
+
+<!-- header start -->
+<header class="p-3 sticky-bar navbar-expand-lg navbar">
+  <div class="container">
+    <a href="index.html"><img src="images/jobhub-logo.svg" class="navbar-brand" alt=""></a>
+    <div class="order-lg-1">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#abc">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <nav class="collapse navbar-collapse justify-content-center">
+      <ul class="m-0 p-0 m-auto">
+        <li class="main-menu-list position-relative float-start">
+          <a class="active" href="index.html">Home
+            <i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Home 1</a></li>
+            <li><a href="#">Home 2</a></li>
+            <li><a href="#">Home 3</a></li>
+            <li><a href="#">Home 4</a></li>
+            <li><a href="#">Home 5</a></li>
+            <li><a href="#">Home 6</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="find-job.html">Find a Job<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Jobs Grid</a></li>
+            <li><a href="#">Jobs List</a></li>
+            <li><a href="#">Jobs Details</a></li>
+            <li><a href="#">Jobs Details 2</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="recruiters.html">Recruiters<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Recruiters</a></li>
+            <li><a href="#">Company Details</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="candidates.html">Candidates<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Candidates Grid</a></li>
+            <li><a href="#">Candidate Details</a></li>
+            <li><a href="#">Candidate Profile</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-list position-relative float-start">
+          <a href="blog.html">Blog<i class="p-1 text-secondary bi bi-caret-down-fill"></i></a>
+          <ul class="sub-menu">
+            <li><a href="#">Blog Grid</a></li>
+            <li><a href="#">Blog Grid 2</a></li>
+            <li><a href="#">Blog Single</a></li>
+          </ul>
+        </li>
+        <li class="dashboard float-start position-relative">
+          <a href="#">Dashboard</a>
+        </li>
+      </ul>
+      <div class="header-right text-end d-inline-block ms-auto">
+        <div class="sign-in">
+          <a class="register-text" href="register.html">Register</a><a class="ms-4 sign-in-btn"
+            href="signin.html">Sign in</a>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</header>
+<!-- header end -->
+
+  <main>
+    <section class="py-3">
+      <div class="container">
+        <div class="job-banner">
+          <div class="job-banner-content text-center">
+            <h3 class="fw-semibold"><span class="job-banner-brand">22 Jobs</span> Available Now </h3>
+            <div class="fw-semibold paragraph-color mt-3">Apply To 564 More Than 25 Years Experience
+              In Medium Or Large Industry <br class="d-none d-xl-block">Jobs On jobbox.com</div>
+
+
+            <div class="form-find mt-4 wow animate__ animate__fadeIn animated" data-wow-delay=".2s">
+              <form>
+                <div class="d-flex align-items-center justify-content-center w-100">
+                  <label class="me-1">
+                    <img src="images/industry.svg" /></label>
+                  <select class="form-input mr-10">
+                    <option>Industry</option>
+                    <option>Software</option>
+                    <option>Finance</option>
+                    <option>Recruting</option>
+                    <option>Management</option>
+                    <option>Advertising</option>
+                    <option>Development</option>
+                  </select>
+                </div>
+                <label class="me-1">
+                  <img src="images/location.svg" width="10%" /></label>
+                <select class="form-input me-3 ">
+                  <option>Location</option>
+                  <option>Aland Islands</option>
+                  <option>Afghanistan</option>
+                  <option>Albania</option>
+                  <option>Algeria</option>
+                  <option>Andorra</option>
+                  <option>Angola</option>
+                  <option>Anguilla</option>
+                  <option>Antarctica</option>
+                  <option>Antigua and Barbuda</option>
+                  <option>Argentina</option>
+                  <option>Armenia</option>
+                </select>
+                <input class="form-input input-keysearch me-5 ps-4" type="text" placeholder="Your keyword... " />
+                <button class="job-banner-btn">Search</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="jobs-filter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="job-filter-box mb-5">
+              <div class="sidebar-filters pt-3">
+
+                <div class="filter-block head-border mb-4">
+                  <h5 class="fw-semibold">Advance Filter <a class="link-reset fw-normal" href="#">Reset</a></h5>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <div class="form-group select-style select-style-icon position-relative  ">
+                    <select class="form-control form-icons select-active ps-5 ">
+                      <option selected>New York, US</option>
+                      <option>London</option>
+                      <option>Paris</option>
+                      <option>Berlin</option>
+                    </select>
+                    <i class="fa-solid fa-location-dot "></i>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-3">Industry</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">All</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">180</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Software</span><span class="checkmark"></span>
+                        </label><span class="number-item">12</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Finance</span><span class="checkmark"></span>
+                        </label><span class="number-item">23</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Recruting</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">43</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Management</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">65</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Advertising</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">76</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-3">Salary Range</h5>
+                  <div class="form-group mb-20">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">All</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">145</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$0k - $20k</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$20k - $40k</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">37</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$40k - $60k</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">75</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$60k - $80k</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">98</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$80k - $100k</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">14</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$100k - $200k</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">25</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-3">Popular Keyword</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Software</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">24</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Developer</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">45</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Web</span><span class="checkmark"></span>
+                        </label><span class="number-item">57</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-3">Position</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Senior</span><span class="checkmark"></span>
+                        </label><span class="number-item">12</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Junior</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">35</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Fresher</span><span class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-4">Experience Level</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Internship</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Entry Level</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">87</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Associate</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">24</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Mid Level</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">45</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Director</span><span class="checkmark"></span>
+                        </label><span class="number-item">76</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Executive</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">89</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-4">Onsite/Remote</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">On-site</span><span class="checkmark"></span>
+                        </label><span class="number-item">12</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Remote</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">65</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Hybrid</span><span class="checkmark"></span>
+                        </label><span class="number-item">58</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-4">Job Posted</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">All</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">78</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">1 day</span><span class="checkmark"></span>
+                        </label><span class="number-item">65</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">7 days</span><span class="checkmark"></span>
+                        </label><span class="number-item">24</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">30 days</span><span class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filter-block mb-4">
+                  <h5 class="fw-semibold mb-4">Job type</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Full Time</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">25</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Part Time</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">64</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Remote Jobs</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">78</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Freelancer</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">97</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-9 col-md-12 col-sm-12 col-12 ">
+            <div class="content-page pt-3">
+              <div class="box-filters-job pb-2">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-5"><span class="text-small text-showing">Showing <strong>41-60 </strong>of
+                      <strong>944 </strong>jobs</span></div>
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-1.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">UI / UX Designer fulltime</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Adobe XD</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Figma</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-2.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">Adobe Ilustrator</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Full Stack Engineer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Part time</span><span
+                          class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Reacy</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Node js</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$700</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-3.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">Bing Search</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Java Software Engineer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Python</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">AWS</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$300</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-4.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          Dailymotion</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Frontend Developer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">6<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Typescript</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Java</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$400</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-5.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">React  Web Developer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Angular</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$100</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-6.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          Quora JSC</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Senior System Engineer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">part time</span><span
+                          class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">PHP</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Android</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-7.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          Nintendo</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Products Manager </a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">8<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">ASP Net.</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Figma</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$300</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-8.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">Periscope</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Lead Quality Control QA</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">5<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">ios </a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Laravel</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-9.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          LinkedIn</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">UI / UX Designer fulltime</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Part time</span><span
+                          class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Adobe XD</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Figma</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$280</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-1.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">UI / UX Designer fulltime</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Adobe XD</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Figma</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-2.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">Adobe Ilustrator</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Full Stack Engineer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Part time</span><span
+                          class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Reacy</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Node js</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$700</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-3.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">Bing Search</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Java Software Engineer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Python</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">AWS</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$300</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-4.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          Dailymotion</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Frontend Developer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">6<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Typescript</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Java</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$400</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-5.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">React  Web Developer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Angular</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$100</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-6.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          Quora JSC</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Senior System Engineer</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">part time</span><span
+                          class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">PHP</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Android</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-7.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          Nintendo</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Products Manager </a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">8<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">ASP Net.</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Figma</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$300</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-8.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">Periscope</a><span
+                          class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">Lead Quality Control QA</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Fulltime</span><span class="card-time">5<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">ios </a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Laravel</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div class="card-grid-2 hover-up">
+                    <div class="card-grid-2-image-left"><span class="flash"></span>
+                      <div class="image-box"><img src="images/brand-9.png" alt="jobBox"></div>
+                      <div class="right-info"><a class="name-job" href="company-details.html">
+                          LinkedIn</a><span class="location-small">New York, US</span></div>
+                    </div>
+                    <div class="card-block-info">
+                      <h6 class="fw-semibold"><a href="#">UI / UX Designer fulltime</a></h6>
+                      <div class="mt-2 mb-3"><span class="card-briefcase">Part time</span><span
+                          class="card-time">4<span>
+                            minutes ago</span></span></div>
+                      <p class="font-sm paragraph-color mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                      <div class="mt-4"><a class=" btn-grey-small me-4" href="#">Adobe XD</a><a
+                          class=" btn-grey-small me-4 mt-1" href="#">Figma</a>
+                      </div>
+                      <div class="card-2-bottom mt-4 position-relative">
+                        <div class="row pe-3 ">
+                          <div class="col-lg-7 col-7"><span class="card-text-price">$280</span><span
+                              class="text-muted">/Hour</span></div>
+                          <div class="col-lg-5 col-5">
+                            <div class="btn btn-apply-now">
+                              Apply now</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- blog start -->
+    <section class="section-box mt-5 mb-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title fw-bold wow animate__ animate__fadeInUp animated"
+            style="visibility: visible; animation-name: fadeInUp;">News and Blog</h2>
+          <p class="paragraph-color h6 wow animate__ animate__fadeInUp animated"
+            style="visibility: visible; animation-name: fadeInUp;">Get the latest news, updates and tips</p>
+        </div>
+      </div>
+      <div class="container">
+        <div id="carouselExampleControls" class="carousel slide m-0 p-0" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row align-items-center justify-content-center">
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news1.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">Events</a></div>
+                      <h5><a href="#">21 Job Interview Tips: How To Make a Great Impression</a></h5>
+                      <p class="color-text-paragraph">Prepare your answer to the common question: “Tell me about
+                        yourself, and why are you interested in this role with our company?” The idea is to quickly
+                        communicate.</p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user1.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Steven Jobs</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6 pt-15">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>6 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news2.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">News</a></div>
+                      <h5><a href="#">39 Strengths and Weaknesses To Discuss in a Job Interview</a></h5>
+                      <p class="color-text-paragraph">At some point during the interview process, you may be asked to
+                        describe your personal strengths and weaknesses. Many job candidates are unsure how to approach.
+                      </p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user2.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">William Kend</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>9 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news3.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">News</a></div>
+                      <h5><a href="#">Interview Question: Why Dont You Have a Degree?</a></h5>
+                      <p class="color-text-paragraph">The Indeed Editorial Team comprises a diverse and talented team of
+                        writers, researchers and subject matter experts equipped with Indeed's data and insights to
+                        deliver.</p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user3.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Sarah hardling</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6 pt-15">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>9 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news1.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">Events</a></div>
+                      <h5><a href="#">21 Job Interview Tips: How To Make a Great Impression</a></h5>
+                      <p class="color-text-paragraph">Prepare your answer to the common question: “Tell me about
+                        yourself, and why are you interested in this role with our company?” The idea is to quickly
+                        communicate.</p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user1.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Steven Jobs</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6 pt-15">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>6 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news2.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">News</a></div>
+                      <h5><a href="#">39 Strengths and Weaknesses To Discuss in a Job Interview</a></h5>
+                      <p class="color-text-paragraph">At some point during the interview process, you may be asked to
+                        describe your personal strengths and weaknesses. Many job candidates are unsure how to approach.
+                      </p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user2.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Steven Jobs</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>6 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news3.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">News</a></div>
+                      <h5><a href="#">Interview Question: Why Dont You Have a Degree?</a></h5>
+                      <p class="color-text-paragraph">The Indeed Editorial Team comprises a diverse and talented team of
+                        writers, researchers and subject matter experts equipped with Indeed's data and insights to
+                        deliver.</p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user3.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Steven Jobs</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6 pt-15">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>6 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news1.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">Events</a></div>
+                      <h5><a href="#">21 Job Interview Tips: How To Make a Great Impression</a></h5>
+                      <p class="color-text-paragraph">Prepare your answer to the common question: “Tell me about
+                        yourself, and why are you interested in this role with our company?” The idea is to quickly
+                        communicate.</p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user1.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Steven Jobs</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6 pt-15">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>6 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news2.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">News</a></div>
+                      <h5><a href="#">39 Strengths and Weaknesses To Discuss in a Job Interview</a></h5>
+                      <p class="color-text-paragraph">At some point during the interview process, you may be asked to
+                        describe your personal strengths and weaknesses. Many job candidates are unsure how to approach.
+                      </p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user2.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Steven Jobs</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>6 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-grid-3 wow animate__ animate__fadeIn animated">
+                    <div class="card-grid-3-image"><a href="#">
+                        <img src="images/img-news3.png" width="100%"></a></div>
+                    <div class="card-block-info">
+                      <div class="tags"><a class="btn btn-tag" href="#">News</a></div>
+                      <h5><a href="#">Interview Question: Why Dont You Have a Degree?</a></h5>
+                      <p class="color-text-paragraph">The Indeed Editorial Team comprises a diverse and talented team of
+                        writers, researchers and subject matter experts equipped with Indeed's data and insights to
+                        deliver.</p>
+                      <div class="card-2-bottom">
+                        <div class="row">
+                          <div class="col-lg-6 col-6">
+                            <div class="d-flex"><img class="img-rounded" src="images/user3.png" alt="jobBox">
+                              <div class="info-right-img"><span class="color-brand-1">Steven Jobs</span><br><span
+                                  class="color-text-paragraph-2">06 September</span></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-6 pt-15">
+                            <h6 class="color-text-paragraph-2 text-end pt-4"><span>6 mins to read</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- blog end -->
+
+    <!-- updates start -->
+    <section class="upadates-section-box mt-5 mb-2">
+      <div class="container">
+        <div class="box-newsletter">
+          <div class="row">
+            <div class="col-xl-3 col-12">
+              <div class=" text-center d-none d-xl-block"><img src="images/newsletter-left.png"></div>
+            </div>
+            <div class="col-lg-12 col-xl-6 col-12">
+              <h2 class="text-md-newsletter text-center">New Things Will Always<br> Update Regularly</h2>
+              <div class="box-form-newsletter">
+                <form class="form-newsletter">
+                  <input class="input-newsletter" type="text" value="" placeholder="Enter your email here">
+                  <button class="btn btn-default">Subscribe</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-xl-3 col-12">
+              <div class=" text-center d-none d-xl-block"><img src="images/newsletter-right.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- updates end -->
+  </main>
+
+
+  <!-- footer start -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="footer-index-detail">
+            <a href="#"><img src="images/jobhub-logo.svg" /></a>
+            <div class="mt-4 mb-4 color-text-paragraph-2">
+              <p class="paragraph-color fs-6">JobBox is the heart of the design community and the best resource
+                to discover and connect with designers and jobs worldwide.</p>
+            </div>
+            <div class="footer-social">
+              <a class="icon-facebook" href="#"></a><a class="icon-twitter" href="#"></a><a class="icon-linkedin"
+                href="#"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+          <div class="footer-index text-sm-center text-md-center text-lg-center text-left">
+            <h6 class="mb-2">Resources</h6>
+            <ul class="d-inline-block p-0">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+          <div class="footer-index text-lg-center text-left">
+            <h6 class="mb-2">Quick links</h6>
+            <ul class="d-inline-block p-0">
+              <li><a href="#">iOS</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Desktop</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+          <div class="footer-index text-lg-center text-left mt-2 mt-lg-0">
+            <h6 class="mb-2">More</h6>
+            <ul class="d-inline-block p-0">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="footer-index-download mt-2 mt-lg-0">
+            <h6 class="mb-20">Download App</h6>
+            <p class="paragraph-color ">
+              Download our Apps and get extra 15% Discount on your first Order…!
+            </p>
+            <div class="mt-15">
+              <a class="mr-5" href="#"><img class="ms-1" src="images/app-store.png" /></a><a href="#"><img class="ms-1"
+                  src="images/android.png" /></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="color-text-paragraph">Copyright © 2022. JobBox all right reserved</span>
+          </div>
+          <div class="col-md-6 text-md-end text-start">
+            <div class="footer-social">
+              <a class="color-text-paragraph" href="#">Privacy Policy</a><a class="color-text-paragraph me-3 ms-3"
+                href="#">Terms & Conditions</a><a class="font-xs color-text-paragraph" href="#">Security</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"> </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      "use strict";
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
+</body>
+
+</html>

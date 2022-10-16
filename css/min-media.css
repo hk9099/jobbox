@@ -1,0 +1,145 @@
+/* xs */
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .box-we-hiring::after {
+    display: none;
+  }
+  .box-we-hiring::before {
+    display: none;
+  }
+  .box-we-hiring {
+    flex-direction: column;
+    padding: 40px 42px 40px 32px;
+  }
+  section .banner-hero .banner-inner .block-banner {
+    padding: 50px 30px;
+  }
+
+  .upadates-section-box .box-newsletter .box-form-newsletter {
+    margin: 30px 20px;
+  }
+  .box-image-job .img-job-1 {
+    display: none;
+  }
+  .box-image-job .img-job-2 {
+    display: none;
+  }
+}
+
+/* sm */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .box-we-hiring::after {
+    display: none;
+  }
+  .box-we-hiring::before {
+    display: none;
+  }
+
+  .box-we-hiring {
+    flex-direction: row;
+    padding: 40px 125px;
+  }
+  .upadates-section-box .box-newsletter .box-form-newsletter {
+    margin: 0 20px;
+  }
+  section .banner-hero .banner-inner .block-banner {
+    padding: 50px 30px;
+  }
+  header nav ul .main-menu-list {
+    padding: 10px 8px;
+  }
+  header nav ul .dashboard a {
+    font-size: 11px;
+  }
+  header nav ul .main-menu-list a {
+    font-size: 11px;
+  }
+  header nav ul .dashboard {
+    padding: 10px 11px;
+  }
+}
+
+/* md */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .upadates-section-box .box-newsletter .box-form-newsletter {
+    margin: 0 auto;
+  }
+  header nav ul .dashboard a {
+    font-size: 9px;
+  }
+  header nav ul .main-menu-list a {
+    font-size: 11px;
+  }
+  header nav ul .dashboard {
+    padding: 10px 11px;
+  }
+}
+
+/* lg */
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  section .banner-hero .banner-inner .block-banner {
+    padding: 50px 160px 80px 110px;
+  }
+  header nav ul .dashboard a {
+    font-size: 9px;
+  }
+  header nav ul .main-menu-list a {
+    font-size: 11px;
+  }
+  header nav ul .dashboard {
+    padding: 10px 11px;
+  }
+}
+
+/* xl */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .box-we-hiring::after {
+    display: block;
+  }
+  .box-we-hiring::before {
+    display: block;
+  }
+  header nav ul .main-menu-list {
+    padding: 10px 12px;
+  }
+  header nav ul .dashboard a {
+    font-size: 14px;
+  }
+  header nav ul .main-menu-list a {
+    font-size: 14px;
+  }
+  header nav ul .dashboard {
+    padding: 10px 22px;
+  }
+}
+
+/* xxl */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
